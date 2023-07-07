@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/local">
+
+    <activity
+        android:id="@+id/home_ac"
+        android:name="com.converter.onlineshoppingapplication.Home"
+        android:label="@string/menu_home"
+        tools:layout="@layout/activity_home" />
+
+    <activity
+        android:id="@+id/acc_info"
+        android:name="com.converter.onlineshoppingapplication.Accinfo"
+        android:label="@string/acc_info"
+        tools:layout="@layout/activity_accinfo" />
+
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.converter.onlineshoppingapplication.ui.slideshow.CartFragment"
+        android:label="@string/cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/local"
+        android:name="com.converter.onlineshoppingapplication.localFragment"
+        tools:layout="@layout/fragment_local" />
+    <fragment
+        android:id="@+id/sign_out"
+        android:name="com.converter.onlineshoppingapplication.signoutFragment"
+        tools:layout="@layout/fragment_signout"/>
+</navigation>
